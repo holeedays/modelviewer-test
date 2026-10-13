@@ -2,7 +2,7 @@
   "rewrites": [
     {
       "source": "/(.*)",
-      "destination": "/modelviewer/wsgi.py"
+      "destination": "/api/index.py"
     }
   ],
   "headers": [
