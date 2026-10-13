@@ -61,7 +61,7 @@ mimetypes.add_type("text/css", ".css", True)
 
 MIDDLEWARE = [
     # the whitenoise lib allow serverless sites like vercel to serve static files
-    'whitenoise.middleware.WhiteNoiseMiddleWare',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
 
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
