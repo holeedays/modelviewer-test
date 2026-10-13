@@ -33,7 +33,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     # allows my current vercel deployment to host this site
-    'modelviewer-test-modelviewer-rkc49z4w3-holdys.vercel.app' 
+    '.vercel.app' 
 ]
 
 
