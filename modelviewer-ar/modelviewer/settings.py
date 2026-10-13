@@ -49,7 +49,14 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 ]
 
+# again, need this for vercel to serve static files
+STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
 MIDDLEWARE = [
+    # the whitenoise lib allow serverless sites like vercel to serve static files
+    'whitenoise.middleware.WhiteNoiseMiddleWare',
+
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
