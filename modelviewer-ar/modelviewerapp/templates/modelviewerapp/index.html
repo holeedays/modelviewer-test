@@ -1,0 +1,18 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'modelviewerapp/css/index.css' %}">
+</head>
+<body>
+    <main></main>
+
+    <div id="static-path" data-path="{% static '' %}"></div>
+    <script type="module" src="{% static 'modelviewerapp/js/test.js' %}"></script>
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.3.1/model-viewer.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,1 @@
+{"version":3,"file":"modelviewer.d.ts","sourceRoot":"","sources":["../ts/modelviewer.ts"],"names":[],"mappings":"AACA,MAAM,WAAW,KAAK;IAClB,CAAC,IAAI,EAAE,MAAM,GAAG,GAAG,CAAA;CACtB;AAED,qBAAa,kBAAkB;IACpB,IAAI,EAAE,WAAW,CAAC;IAGlB,KAAK,EAAE,KAAK,CAAC;IAEpB,YAAa,KAAK,EAAE,KAAK,EAGxB;IAGD,OAAO,CAAC,IAAI;IAeZ,OAAO,CAAC,WAAW;CActB"}
