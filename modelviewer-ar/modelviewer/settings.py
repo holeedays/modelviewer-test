@@ -10,6 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/6.1/ref/settings/
 """
 import os
+import mimetypes
 from pathlib import Path
 from dotenv import load_dotenv
 
@@ -52,6 +53,11 @@ INSTALLED_APPS = [
 # again, need this for vercel to serve static files
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+# this is to help serve files other than text/html on the page
+mimetypes.add_type("model/gltf-binary", ".glb", True)
+mimetypes.add_type("model/gltf+json", ".gltf", True)
+mimetypes.add_type("text/css", ".css", True)
 
 MIDDLEWARE = [
     # the whitenoise lib allow serverless sites like vercel to serve static files
